@@ -7,7 +7,7 @@ app.use(express.static('public'));
 // app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname +'/public/index.html'))
+    res.sendFile('/index.html', {root : __dirname})
     // res.send('hello world')
 })
 // app.get('/', (req, res) => res.send('Home page Route!'))
