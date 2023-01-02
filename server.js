@@ -7,7 +7,7 @@ const PORT = 5000
 app.use('/static', express.static('public'))
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(path.join(__dirname + '/index.html'))
     // res.send('hello world')
 })
 // app.get('/', (req, res) => res.send('Home page Route!'))
