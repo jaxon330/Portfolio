@@ -4,10 +4,10 @@ const path = require('path')
 const app = express()
 const PORT = 5000
 // app.use(express.static('public'));
-app.use('/static', express.static('public'))
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.sendFile(path.join(__dirname, '/index.html'))
     // res.send('hello world')
 })
 // app.get('/', (req, res) => res.send('Home page Route!'))
