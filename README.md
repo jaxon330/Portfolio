@@ -1,2 +1,2 @@
-# jakhongir-portfolio
+# Jakhongir Masaidov
 Personal portofolio
